@@ -1,0 +1,72 @@
+{
+  "seller": [
+    {
+      "id": "64d4",
+      "name": "Sachin Verma",
+      "email": "sachinvrm.dl@gmail.com",
+      "password": "qwer1234"
+    },
+    {
+      "id": "e131",
+      "name": "Anil Arora",
+      "email": "anil@gmail.com",
+      "password": "anil1234"
+    }
+  ],
+  "products": [
+    {
+      "name": "  Motorola 50 edge fusion",
+      "price": "  22999",
+      "color": "  Blue",
+      "category": "  Mobile",
+      "description": "  (Marshmallow Blue, 128 GB)  (8 GB RAM)",
+      "image": "https://motorolain.vtexassets.com/arquivos/ids/158978-800-auto?width=800&height=auto&aspect=true",
+      "id": "4e88"
+    },
+    {
+      "id": "8876",
+      "name": "Iphone 16 Pro",
+      "price": "159999",
+      "color": "Natural Titanium",
+      "category": "Mobile",
+      "description": "256GB STORAGE iPhone 16 Pro Max (256GB) 512GB STORAGE iPhone 16 Pro Max (512GB) 1TB STORAGE",
+      "image": "https://i.gadgets360cdn.com/products/large/iphone-16-pro-max-634x800-1725909635.jpg?downsize=*:420&output-quality=80"
+    },
+    {
+      "id": "7b99",
+      "name": "HP Victus",
+      "price": "60990",
+      "color": "Back",
+      "category": "Laptop",
+      "description": "HP Victus Gaming Laptop,Windows 11 Home,AMD Ryzen 5 5600H,4Gb RTX 3050 Gpu,15.6-Inch (39.6 Cm),Fhd,IPS,144Hz,16Gb Ddr4,512Gb Ssd,Backlit Kb,B&O,9Ms Response Time,Dual Speakers (Blue,2.37 Kg),Fb0106Ax",
+      "image": "https://m.media-amazon.com/images/I/41NwmRIOdYL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+      "id": "03bc",
+      "name": "Lenovo IdeaPad Slim 3",
+      "price": "59990",
+      "color": "Silver grey",
+      "category": "Laptop",
+      "description": "Lenovo IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15\" (38.1cm) FHD IPS 300 Nits Thin & Light Laptop (16GB/512GB SSD/Win 11/MSO 21/1Yr ADP Free/Alexa Built-in/3 mon Game Pass/Grey/1.6Kg), 83EM008GIN",
+      "image": "https://m.media-amazon.com/images/I/41d1SeNfhpL._SY300_SX300_QL70_FMwebp_.jpg"
+    },
+    {
+      "id": "81f5",
+      "name": "Galaxy Buds3 Pro",
+      "price": "19999",
+      "color": "Metallic Silver",
+      "category": "Headphones",
+      "description": "Bluetooth v5.4, Accelerometer, Gyro Sensor, Hall Sensor, Pressure Sensor, Proximity Sensor, Touch Sensor",
+      "image": "https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-buds3-pro-r630-sm-r630nzaainu-542134792?$684_547_PNG$"
+    },
+    {
+      "id": "e24a",
+      "name": "AirPods Max",
+      "price": "9900",
+      "color": "Blue",
+      "category": "Headphones",
+      "description": "\nThe ultimate over‑ear personal listening experience — now in fresh new colours. AirPods Max deliver stunningly detailed, high‑fidelity audio. Personalised Spatial Audio with dynamic head tracking for sound that surrounds you. Footnote ⁴ Pro‑level Active Noise Cancellation to remove unwanted sound. Footnote ³ Transparency mode to comfortably hear the world around you. Up to 20 hours of battery life on a single charge. Footnote ¹³ Effortless setup and on‑head detection for a magical listening experience. Now with USB‑C for easy charging.",
+      "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-202409-blue_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1724927052173"
+    }
+  ]
+}

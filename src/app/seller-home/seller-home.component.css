@@ -1,0 +1,23 @@
+table{
+    text-align: left;
+    color: brown;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    border: 1px solid black;
+    padding: 10px;
+    min-height: 160px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+th{
+    color: black;
+}
+
+.adjust-update-link{
+    margin-left: 10px;
+}
