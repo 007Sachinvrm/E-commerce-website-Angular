@@ -68,5 +68,31 @@
       "description": "\nThe ultimate over‑ear personal listening experience — now in fresh new colours. AirPods Max deliver stunningly detailed, high‑fidelity audio. Personalised Spatial Audio with dynamic head tracking for sound that surrounds you. Footnote ⁴ Pro‑level Active Noise Cancellation to remove unwanted sound. Footnote ³ Transparency mode to comfortably hear the world around you. Up to 20 hours of battery life on a single charge. Footnote ¹³ Effortless setup and on‑head detection for a magical listening experience. Now with USB‑C for easy charging.",
       "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-202409-blue_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1724927052173"
     }
+  ],
+  "users": [
+    {
+      "id": "b972",
+      "name": "anil ji",
+      "email": "anil1234@gmail.com",
+      "password": "anil1234"
+    },
+    {
+      "id": "bafd",
+      "name": "Anirudha ",
+      "email": "anirudha@gmail.com",
+      "password": "anil1234"
+    },
+    {
+      "id": "6896",
+      "name": "Sam",
+      "email": "sam@gmail.com",
+      "password": "anil1234"
+    },
+    {
+      "id": "5841",
+      "name": "Health&Wellness",
+      "email": "sdfd@gmail.com",
+      "password": "anil1234"
+    }
   ]
 }

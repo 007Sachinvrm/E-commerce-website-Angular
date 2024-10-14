@@ -51,3 +51,13 @@ body{
     background-color: black;
     border-radius: 5p;
 }
+
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}

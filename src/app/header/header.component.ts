@@ -14,6 +14,8 @@ export class HeaderComponent implements OnInit {
   menuType: string= 'default';
   sellerName: string='';
   searchResult: undefined | product[];
+  userName: string='';
+  cartItems=0;
 
   constructor(private route: Router, private product: ProductsService) { }
 
@@ -22,19 +24,36 @@ export class HeaderComponent implements OnInit {
       if(val.url){
         if( localStorage.getItem('seller') && val.url.includes('seller')){
           this.menuType = 'seller';
-          if(localStorage.getItem('seller')){
             let sellerStore = localStorage.getItem('seller');
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name;
-          }
+          }else if(localStorage.getItem('user')){
+          this.menuType = 'user';
+          let userStore = localStorage.getItem('user');
+          let userData = userStore && JSON.parse(userStore);
+          this.userName = userData.name;
+          console.log(userData);
         }else{
           this.menuType = 'default';
         }
       }
     })
+
+    let cartData= localStorage.getItem('localCart');
+    if(cartData){
+      this.cartItems= JSON.parse(cartData).length;
+    }
+    this.product.cartData.subscribe((items)=>{
+      this.cartItems= items.length;
+    })
   }
 
   userLogout(){
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth']);
+  }
+
+  sellerLogout(){
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
   }

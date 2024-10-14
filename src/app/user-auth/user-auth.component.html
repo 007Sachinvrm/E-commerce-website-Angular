@@ -1,12 +1,87 @@
-<div clas="user-auth">
+<div class="user-auth">
+  <div class="user-signup-login" *ngIf="!showLogin">
     <h2>User Sign-up</h2>
-    <form class="common-form" #userSignup="ngForm" (ngSubmit)="signUp(userSignup.value)">
-        <label for="username">Name</label>
-        <input class="form-input" type="text" name="name" placeholder="Enter User Name" ngModel>
-        <label for="username">Email</label>
-        <input class="form-input" type="email" name="email" placeholder="Enter User Email" ngModel>
-        <label for="username">Password</label>
-        <input class="form-input" type="password" name="password" placeholder="Enter Password" ngModel>
-        <button class="form-button">Sign up</button>
+    <form
+      class="common-form"
+      #userSignup="ngForm"
+      (ngSubmit)="signUp(userSignup.value)"
+    >
+      <label for="username">Name</label>
+      <input
+        class="form-input"
+        type="text"
+        name="name"
+        placeholder="Enter User Name"
+        ngModel
+        required
+      />
+      <label for="username">Email</label>
+      <input
+        class="form-input"
+        type="email"
+        name="email"
+        placeholder="Enter User Email"
+        ngModel
+        required
+      />
+      <label for="username">Password</label>
+      <input
+        class="form-input"
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+        ngModel
+        required
+      />
+      <button class="form-button">Sign up</button>
+      <h5>
+        Already have Account?
+        <a class="auth-toggle-link" (click)="openLogin()">Login</a>
+      </h5>
     </form>
+  </div>
+  <div class="user-signup-login" *ngIf="showLogin">
+    <h2>User Login</h2>
+    <form
+      class="common-form"
+      #userLogin="ngForm"
+      (ngSubmit)="login(userLogin.value)"
+    >
+      <label for="username">Email</label>
+      <input
+        class="form-input"
+        type="email"
+        name="email"
+        placeholder="Enter User Email"
+        ngModel
+        #email="ngModel"
+        required
+        email
+      />
+      <h5 class="invalid-input" *ngIf="email.invalid && email.touched">
+        Please Enter a Valid Email.
+      </h5>
+      <label for="username">Password</label>
+      <input
+        class="form-input"
+        type="password"
+        name="password"
+        placeholder="Enter Password"
+        ngModel
+        #password="ngModel"
+        required
+        minlength="6"
+        maxlength="20"
+      />
+      <h5 class="invalid-input" *ngIf="password.invalid && password.touched">
+        Please Enter a Valid Password
+      </h5>
+      <button [disabled]="userLogin.invalid" class="form-button">Login</button>
+      <h5>
+        Don't have Account?<a class="auth-toggle-link" (click)="opensignup()">
+          Signup</a
+        >
+      </h5>
+    </form>
+  </div>
 </div>
